@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お知らせ一覧｜ちょいCam</title>
+  <meta name="description" content="ちょいCamからの最新のお知らせ・キャンペーン情報・イベント出展・コラムを一覧でご覧いただけます。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo">
+        <span class="header__logo-sub">軽キャンパー</span>
+        <span class="header__logo-main">ちょいCam<sup>&reg;</sup></span>
+        <span class="header__logo-since">Since 2009</span>
+      </a>
+      <nav class="header__nav" id="nav">
+        <ul class="header__nav-list">
+          <li><a href="index.html#about">ちょいCamとは</a></li>
+          <li><a href="index.html#lineup">商品ラインナップ</a></li>
+          <li><a href="index.html#options">オプション</a></li>
+          <li><a href="news.html">お知らせ</a></li>
+          <li><a href="index.html#challenge">ちょいCam Challenge</a></li>
+          <li><a href="index.html#voice">オーナーの声</a></li>
+          <li><a href="index.html#dealers">販売店一覧</a></li>
+          <li><a href="index.html#faq">よくある質問</a></li>
+          <li><a href="index.html#contact" class="header__nav-cta">お問い合わせ</a></li>
+        </ul>
+      </nav>
+      <button class="header__hamburger" id="hamburger" aria-label="メニュー">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="page-hero__bg"></div>
+    <div class="container">
+      <nav class="breadcrumb" aria-label="パンくずリスト">
+        <a href="index.html">HOME</a>
+        <span class="breadcrumb__sep">/</span>
+        <span class="breadcrumb__current">お知らせ</span>
+      </nav>
+      <div class="page-hero__content">
+        <span class="page-hero__badge">NEWS &amp; TOPICS</span>
+        <p class="page-hero__sub fade-up">ちょいCamからのお知らせ</p>
+        <h1 class="page-hero__title fade-up delay-1">旅のそばに、<br>いつでも新しい風を。</h1>
+        <p class="page-hero__desc fade-up delay-2">
+          新商品・キャンペーン・イベント出展など、<br>
+          ちょいCamからの最新情報をお届けします。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="news-list">
+    <div class="container">
+      <div class="news-list__layout">
+
+        <!-- ===== Main ===== -->
+        <div class="news-list__main fade-up">
+          <div class="news-list__header">
+            <div class="section-header section-header--left" style="margin-bottom:0;">
+              <span class="section-header__en">ALL NEWS</span>
+              <h2 class="section-header__ja">お知らせ一覧</h2>
+            </div>
+            <span class="news-list__count">全 6 件</span>
+          </div>
+
+          <div class="news-list__items">
+            <a href="news-azusa-release.html" class="news-list__item">
+              <time class="news-list__date">2026.04.15</time>
+              <span class="news-cat news-cat--info">お知らせ</span>
+              <span class="news-list__title">ちょいCam 梓（あずさ）新モデル発売のお知らせ</span>
+            </a>
+            <a href="news-renewal.html" class="news-list__item">
+              <time class="news-list__date">2026.04.01</time>
+              <span class="news-cat news-cat--info">お知らせ</span>
+              <span class="news-list__title">ちょいCam 公式WEBサイトをリニューアルしました</span>
+            </a>
+            <a href="news-fair-2026spring.html" class="news-list__item">
+              <time class="news-list__date">2026.03.15</time>
+              <span class="news-cat news-cat--event">イベント</span>
+              <span class="news-list__title">春のキャンピングカーフェア2026 出展のお知らせ</span>
+            </a>
+            <a href="news-solar.html" class="news-list__item">
+              <time class="news-list__date">2026.03.01</time>
+              <span class="news-cat news-cat--info">お知らせ</span>
+              <span class="news-list__title">新オプション「ソーラー充電システム」販売開始</span>
+            </a>
+            <a href="news-campaign-2026spring.html" class="news-list__item">
+              <time class="news-list__date">2026.02.20</time>
+              <span class="news-cat news-cat--campaign">キャンペーン</span>
+              <span class="news-list__title">新年度ご成約キャンペーン「はじめての軽キャンパー応援」開始</span>
+            </a>
+            <a href="news-hinoki-column.html" class="news-list__item">
+              <time class="news-list__date">2026.02.10</time>
+              <span class="news-cat news-cat--column">コラム</span>
+              <span class="news-list__title">三河の家具職人が語る、天然木と軽キャンパーのこと</span>
+            </a>
+          </div>
+
+          <div class="news-list__pager">
+            <span class="is-current">1</span>
+            <a href="#" aria-disabled="true" style="pointer-events:none;opacity:0.35;">2</a>
+            <a href="#" aria-disabled="true" style="pointer-events:none;opacity:0.35;">Next &rsaquo;</a>
+          </div>
+        </div>
+
+        <!-- ===== Sidebar ===== -->
+        <aside class="news-side fade-up delay-1">
+          <div class="news-side__block">
+            <span class="news-side__title">CATEGORY</span>
+            <span class="news-side__title-ja">カテゴリから探す</span>
+            <div class="news-side__list">
+              <a href="#">お知らせ<span class="news-side__list-count">3</span></a>
+              <a href="#">キャンペーン<span class="news-side__list-count">1</span></a>
+              <a href="#">イベント<span class="news-side__list-count">1</span></a>
+              <a href="#">コラム<span class="news-side__list-count">1</span></a>
+            </div>
+          </div>
+
+          <div class="news-side__block">
+            <span class="news-side__title">ARCHIVE</span>
+            <span class="news-side__title-ja">月別アーカイブ</span>
+            <div class="news-side__list">
+              <a href="#">2026年4月<span class="news-side__list-count">2</span></a>
+              <a href="#">2026年3月<span class="news-side__list-count">2</span></a>
+              <a href="#">2026年2月<span class="news-side__list-count">2</span></a>
+            </div>
+          </div>
+
+          <div class="news-side__block">
+            <span class="news-side__title">POPULAR</span>
+            <span class="news-side__title-ja">よく読まれている記事</span>
+            <div class="news-side__popular">
+              <div class="news-side__popular-item">
+                <span class="news-side__popular-rank">01</span>
+                <div class="news-side__popular-text">
+                  <time>2026.04.15</time>
+                  <a href="news-azusa-release.html">ちょいCam 梓（あずさ）新モデル発売のお知らせ</a>
+                </div>
+              </div>
+              <div class="news-side__popular-item">
+                <span class="news-side__popular-rank">02</span>
+                <div class="news-side__popular-text">
+                  <time>2026.02.10</time>
+                  <a href="news-hinoki-column.html">三河の家具職人が語る、天然木と軽キャンパーのこと</a>
+                </div>
+              </div>
+              <div class="news-side__popular-item">
+                <span class="news-side__popular-rank">03</span>
+                <div class="news-side__popular-text">
+                  <time>2026.02.20</time>
+                  <a href="news-campaign-2026spring.html">新年度ご成約キャンペーン開始</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <span class="footer__logo-sub">軽キャンパー</span>
+            <span class="footer__logo-main">ちょいCam<sup>&reg;</sup></span>
+          </div>
+          <p class="footer__brand-text">VANTECH株式会社</p>
+        </div>
+        <div class="footer__links">
+          <div class="footer__links-col">
+            <h4>ちょいCam</h4>
+            <ul>
+              <li><a href="index.html#about">ちょいCamとは</a></li>
+              <li><a href="index.html#lineup">商品ラインナップ</a></li>
+              <li><a href="index.html#options">オプション</a></li>
+            </ul>
+          </div>
+          <div class="footer__links-col">
+            <h4>コンテンツ</h4>
+            <ul>
+              <li><a href="news.html">お知らせ</a></li>
+              <li><a href="index.html#challenge">ちょいCam Challenge</a></li>
+              <li><a href="index.html#voice">オーナーの声</a></li>
+              <li><a href="index.html#faq">よくある質問</a></li>
+            </ul>
+          </div>
+          <div class="footer__links-col">
+            <h4>サポート</h4>
+            <ul>
+              <li><a href="index.html#dealers">販売店一覧</a></li>
+              <li><a href="index.html#company">会社情報</a></li>
+              <li><a href="index.html#contact">お問い合わせ</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2009-2026 VANTECH Co., Ltd. All rights reserved.</p>
+        <ul class="footer__bottom-links">
+          <li><a href="#">プライバシーポリシー</a></li>
+          <li><a href="#">特定商取引法に基づく表示</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#header" class="back-to-top" id="backToTop" aria-label="ページトップへ">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <polyline points="18 15 12 9 6 15"/>
+    </svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
