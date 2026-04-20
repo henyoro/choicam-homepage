@@ -2318,6 +2318,20 @@ ul {
   padding: 130px 0 40px;
   background: linear-gradient(180deg, var(--gray-50) 0%, var(--off-white) 100%);
 }
+/* Breadcrumb override: page-hero uses white text on dark, but article-hero is light */
+.article-hero .breadcrumb {
+  color: var(--text-light);
+}
+.article-hero .breadcrumb a {
+  color: var(--text-light);
+}
+.article-hero .breadcrumb a:hover {
+  color: var(--green);
+}
+.article-hero .breadcrumb__current {
+  color: var(--text);
+  font-weight: 500;
+}
 .article-hero__meta {
   display: flex;
   align-items: center;
@@ -2370,10 +2384,7 @@ ul {
   letter-spacing: 0.2em;
   color: rgba(255,255,255,0.88);
 }
-.article-hero__visual--info    { background: linear-gradient(135deg, #5D3600 0%, #F9BF11 100%); }
-.article-hero__visual--campaign{ background: linear-gradient(135deg, #A13D1F 0%, #F4A261 100%); }
-.article-hero__visual--event   { background: linear-gradient(135deg, var(--green-dark) 0%, var(--green) 100%); }
-.article-hero__visual--column  { background: linear-gradient(135deg, #5D3600 0%, #B58C4B 100%); }
+/* Category gradient rules moved below .article-related__thumb to win cascade. */
 
 /* Article body */
 .article-body {
@@ -2623,6 +2634,19 @@ ul {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+/* Category-specific gradient overrides (must come after .article-related__thumb and .article-hero__visual to win the cascade) */
+.article-hero__visual--info,
+.article-related__thumb.article-hero__visual--info     { background: linear-gradient(135deg, #5D3600 0%, #F9BF11 100%); }
+.article-hero__visual--campaign,
+.article-related__thumb.article-hero__visual--campaign { background: linear-gradient(135deg, #A13D1F 0%, #F4A261 100%); }
+.article-hero__visual--event,
+.article-related__thumb.article-hero__visual--event    { background: linear-gradient(135deg, var(--green-dark) 0%, var(--green) 100%); }
+.article-hero__visual--column,
+.article-related__thumb.article-hero__visual--column   { background: linear-gradient(135deg, #5D3600 0%, #B58C4B 100%); }
+.article-related__thumb.article-hero__visual--gradient span {
+  font-size: 1.3rem;
+  letter-spacing: 0.18em;
 }
 .article-related__body {
   padding: 20px 22px 24px;

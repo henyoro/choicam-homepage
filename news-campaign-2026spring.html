@@ -132,7 +132,7 @@
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 10.304c0-5.369-5.383-9.738-12-9.738S0 4.935 0 10.304c0 4.812 4.269 8.846 10.036 9.608.391.084.922.258 1.056.593.121.303.079.776.039 1.082l-.171 1.027c-.053.303-.242 1.186 1.039.647 1.281-.54 6.911-4.069 9.428-6.967C23.166 14.35 24 12.428 24 10.304z"/></svg>
             LINE
           </a>
-          <button type="button" class="article-share__btn article-share__btn--copy" onclick="navigator.clipboard&amp;&amp;navigator.clipboard.writeText(location.href);this.textContent='コピーしました'">
+          <button type="button" class="article-share__btn article-share__btn--copy" onclick="if(navigator.clipboard){navigator.clipboard.writeText(location.href);this.textContent=&#39;コピーしました&#39;}else{this.textContent=&#39;コピーできませんでした&#39;}">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
             URLコピー
           </button>
